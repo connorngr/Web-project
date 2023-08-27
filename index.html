@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <head>
+        <title>ConnorNG's Portfolio</title>
+        <!-- Meta tags are always used inside the <head> element of an HTML document. -->
+            <!-- This is important for ensuring that the text on the page is displayed correctly,
+                 regardless of the language or character set used -->
+            <meta charset="utf-8">
+            <!-- These keywords are used by search engines to help people find the page -->
+            <meta name="keywords" content="ConnorNG, Portfolio, Crowfunding">
+            <link rel="stylesheet" href="style.css">  
+            <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css">          
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html" ><img src="logo.png" alt=""></a>
+                <div class="nav-link" id="navLink" onclick="closeMenu()">
+                    <i class="fa fa-times"></i>
+                    <ul>
+                        <li><a href="">Donation</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">How it works</a></li>   
+                        <li><a href="">Contact</a></li>                     
+                    </ul>            
+                </div>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Crowfunding ideas</h1>
+                <p>The leading crowdfunding platform for creative projects, businesses, and social causes.<br> 
+                    With [Crowdfunding Website Name], you can raise money from a large pool of potential backers, all from the comfort of your own home.</p>
+                <a href="#" class="hero-btn">Browse Now</a>    
+            </div>
+        </section>
+    <!-- JavaScript code -->
+    <script>
+        var navLink = document.getElementById("navLink")
+        function closeMenu() {            
+            navLink.style.right = "-400px";       
+            navLink.style.display = "none";     
+        }
+        function openMenu() {
+            navLink.style.display = "block"; 
+            navLink.style.right = "0";                                   
+        }
+    </script>
+    </body>
+</html>
