@@ -8,7 +8,7 @@ html {
 }
 .header {
     width: 100%;
-    min-height: 110vh;
+    min-height: 100vh;
     background-image: url(header.jpg);
     background-position: center;
     background-size: cover;
@@ -97,13 +97,14 @@ nav img:hover {
     border-radius: 10px;
     transition: 0.6s;
 }
-.nav-link i{
-    display: none;
-}
+
 nav .fa {
-    display: none;
+    display: none;    
 }
-@media(max-width: 1200px) {
+@media(max-width: 1000px) {
+    .header {
+        min-height: 40vh;
+    }
     .text-box h1 {
         font-size: 60px;
     }
@@ -153,4 +154,103 @@ nav .fa {
         font-size: 80px;
         margin: 20px;
     }
+    /* next div */
+    .row-info {
+        flex-direction: column;      
+    }
+    .column-info {
+        margin: 30px;
+    }
+
+}
+
+/* Information section */
+
+.info-sect {
+    margin: 20px;
+    text-align: center;        
+}
+.info-sect h1 {
+    font-size: 40px;
+}
+.info-sect p {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 50px;    
+}
+
+.row-info {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row-info h3 {
+    font-size: 25px;   
+    text-align: center; 
+    margin: 20px;
+    color: white;
+}
+.row-info h3::after {
+    content: "";
+    width: 30%;
+    height: 4px;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.row-info p {
+    font-size: 20px;
+}
+.column-info {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background: #f3cf5d;
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px 0 rgba(172, 133, 2, 0.7);
+}
+.column-info:hover {
+    box-shadow: 0px 0px 0px 10px rgb(23, 19, 4);
+}
+
+.row-info img {
+    width: 25%;
+}
+
+/* contact section */
+.contact-sect {
+    margin: 0px auto;
+    margin-bottom: 100px;
+    width: 90%;
+    min-height: 10vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact-sect h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+.contact-sect a {
+    font-size: 30px;
+    color: white;
+    display: inline;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    padding: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.contact-sect a:hover {
+    background-color: yellow;
+    color: black;
 }
