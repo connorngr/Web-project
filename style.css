@@ -254,3 +254,18 @@ nav .fa {
     background-color: yellow;
     color: black;
 }
+
+/* footer */
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.footer h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.footer p {
+    font-size: 15px;    
+}
